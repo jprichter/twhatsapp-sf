@@ -1,0 +1,10 @@
+{
+  "orgName": "Demo Company",
+  "edition": "Developer",
+  "features": ["ServiceCloud", "LightningServiceConsole", "SiteDotCom", "Sites"],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<aura:component implements="lightning:utilityItem">
+    <c:twhatsAppNotification />
+    <c:twhatsAppMessaging />
+</aura:component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The default utility bar for the Service Console application.</description>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>eager</name>
+                <type>decorator</type>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>height</name>
+                <type>decorator</type>
+                <value>480</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>icon</name>
+                <type>decorator</type>
+                <value>live_message</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <type>decorator</type>
+                <value>twhatsApp</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>scrollable</name>
+                <type>decorator</type>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>width</name>
+                <type>decorator</type>
+                <value>340</value>
+            </componentInstanceProperties>
+            <componentName>twhatsApp</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>console:history</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>notes:utilityBarNoteList</componentName>
+        </componentInstances>
+        <name>utilityItems</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>backgroundComponents</name>
+        <type>Background</type>
+    </flexiPageRegions>
+    <masterLabel>Service Console App Utility Bar</masterLabel>
+    <template>
+        <name>one:utilityBarTemplateDesktop</name>
+    </template>
+    <type>UtilityBar</type>
+</FlexiPage>

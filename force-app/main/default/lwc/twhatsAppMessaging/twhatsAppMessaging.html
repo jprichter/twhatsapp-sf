@@ -1,0 +1,25 @@
+<template>
+  <lightning-card title="TwhatsApp">
+    <div class="slds-scrollable_y" style="height:285px">
+      <section role="log" class="slds-chat">
+        <ul class="slds-chat-list">
+          <template for:each={messages} for:item="message">
+            <c-chat-message
+              key={message.Id}
+              inbound={message.Inbound__c}
+              message={message.Body__c}
+            ></c-chat-message>
+          </template>
+        </ul>
+      </section>
+    </div>
+    <div class="input">
+      <lightning-input
+        type="text"
+        name="msgInput"
+        label="Message"
+      ></lightning-input>
+      <lightning-button label="Send" onclick={handleSend}></lightning-button>
+    </div>
+  </lightning-card>
+</template>
